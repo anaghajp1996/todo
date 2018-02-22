@@ -1,11 +1,13 @@
 class ToDoList(object):
 	
 
-	def __init__(self,list_name,to_do,done):
+	def __init__(self):
 		self.name=list_name
-		self.to_do=to_do
-		self.done=done
+		self.to_do={}	#Basic Initialization of variables can be done this way
+		self.done={}	
 
+	#Implement the methods using Dictionaries instead of using Lists.	
+	
 	def add(self,task):
 		self.to_do.append(task)
 
